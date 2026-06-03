@@ -22,7 +22,7 @@ jobs:
           echo "Checking files..."
           test -f index.html
           test -f style.css
-          test -f app.js
+          test -f script.js 
           echo "Build stage completed successfully!"
 
   # ====================
@@ -40,7 +40,7 @@ jobs:
         run: |
           echo "Running simple tests..."
           grep -q "<html>" index.html
-          grep -q "function" app.js
+          grep -q "function" script.js
           echo "All tests passed!"
 
   # ====================
@@ -59,7 +59,7 @@ jobs:
           mkdir build
           cp index.html build/
           cp style.css build/
-          cp app.js build/
+          cp script.js build/ 
           echo "Package created"
 
       - name: Upload artifact
