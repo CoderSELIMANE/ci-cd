@@ -22,7 +22,7 @@ jobs:
           echo "Checking files..."
           test -f index.html
           test -f style.css
-          test -f app.js
+          test -f script.js 
           echo "Build stage completed successfully!"
 
   # ====================
